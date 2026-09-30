@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aung Paing Tun Company Limited | Pharmaceutical Marketer</title>
+    <meta name="description" content="Aung Paing Tun Co., Ltd. (APT) is a leading pharmaceutical marketer and distributor in Myanmar.">
+    <link rel="icon" type="image/x-icon" href="image/icon.jpg">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar-container">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="image/logo.png" alt="APT Logo" onerror="this.style.display='none'">
+                <div class="logo-text">
+                    <span class="company-name">Aung Paing Tun Co., Ltd.</span>
+                    <span class="tagline">ENDEAVORING TO WELLBEING</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navbar Links နေရာတွင် ပြင်ရန် -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li> <!-- about.html သို့ သွားရန် -->
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#suppliers">Suppliers</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-wrapper">
+                <div class="hero-content" data-aos="fade-right">
+                    <div class="sub-title">
+                        <span class="title-bar"></span>
+                        <span class="sub-text">ENDEAVORING TO WELLBEING</span>
+                    </div>
+                    <h1 class="main-heading">PREMIUM PHARMACEUTICAL MARKETER IN MYANMAR</h1>
+                    <p class="description">
+                        With approximately 3 decades of establishment, our associate partner K.T.Z Company stands firmly with over 200 products under importation, marketing, and distribution across Myanmar.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#products" class="btn btn-primary">Explore Products <i class="fas fa-arrow-right"></i></a>
+                        <a href="#about.html" class="btn btn-secondary">Discover More</a>
+                    </div>
+                </div>
+
+                <div class="hero-image-box" data-aos="fade-left" data-aos-delay="150">
+                    <img src="image/offie-building.jpg" alt="APT Building" onerror="this.src='https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=600&q=80'">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-wrapper" data-aos="fade-up">
+                        <div class="image-card">
+                            <img src="image/about.jpg" alt="about" onerror="this.src='https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=600&q=80'">
+                            <h3>QUALITY HEALTHCARE</h3>
+                        </div>
+                        <div class="experience-card">
+                            <strong>9+</strong>
+                            <span>Years of Industry<br>Experience</span>
+                        </div>
+                    </div>
+
+                    <div class="about-text" data-aos="fade-up" data-aos-delay="150">
+                        <span class="section-badge">ABOUT OUR COMPANY</span>
+                        <h2>Building a Healthier <span>Tomorrow.</span></h2>
+                        <p class="lead">
+                            APT (Aung Paing Tun Company Limited) was established in 2015, partnered with K.T.Z company for nationwide distribution.
+                        </p>
+                        <p>
+                            We focus on providing premium quality pharmaceutical & healthcare products across Myanmar from EU-GMP and US-FDA approved facilities in Poland, Cyprus, Germany, and India.
+                        </p>
+                        <a href="#about.html" class="text-link">Learn more about us <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section class="why-us-section section-padding" id="why-us">
+            <div class="container">
+                <div class="section-title text-center" data-aos="fade-down">
+                    <span class="section-badge">WHY CHOOSE US</span>
+                    <h2>Premium Pharmaceutical Products with Justifiable Quality</h2>
+                </div>
+
+                <div class="why-us-grid">
+                    <div class="why-circle" data-aos="zoom-in" data-aos-delay="100">
+                        <p>Strong & Dedicated Marketing Teams With Excellent KOL Relation & CRM</p>
+                    </div>
+                    <div class="why-circle" data-aos="zoom-in" data-aos-delay="200">
+                        <p>Significant Presence of Sales & Marketing Teams Across 15 Subsidiaries</p>
+                    </div>
+                    <div class="why-circle" data-aos="zoom-in" data-aos-delay="300">
+                        <p>Extensive Local Market Knowledge for Healthcare Professionals & Pharmacies</p>
+                    </div>
+                    <div class="why-circle" data-aos="zoom-in" data-aos-delay="400">
+                        <p>Strong Leveraging Power for Diversified Product Portfolio Growth</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Catalog Section -->
+        <!-- Products Section -->
+    <section class="products-section section-padding" id="products">
+        <div class="container">
+        
+        <!-- 1. PRODUCT LIST VIEW -->
+        <div id="productListView">
+            <div class="section-title text-center">
+                <span class="section-badge">PRODUCT CATALOG</span>
+                <h2>Explore Our Healthcare Products</h2>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="product-tabs">
+                <button class="tab-btn active" data-category="Pharmaceutical">Pharmaceutical</button>
+                <button class="tab-btn" data-category="Supplements">Foods & Supplements</button>
+            </div>
+
+            <!-- Swiper Slider Container -->
+            <div class="swiper product-swiper">
+                <div class="swiper-wrapper" id="homeProductWrapper"></div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- 2. PRODUCT DETAIL VIEW -->
+        <div id="productDetailView" style="display: none;">
+            <nav class="breadcrumb">
+                <a href="#home">Home</a> <i class="fas fa-chevron-right"></i>
+                <a href="#products" id="breadcrumbCategory">Products</a> <i class="fas fa-chevron-right"></i>
+                <span id="breadcrumbTitle">Product Name</span>
+            </nav>
+
+            <button class="btn btn-secondary back-btn" id="backToProductsBtn" style="margin-bottom: 25px;">
+                <i class="fas fa-arrow-left"></i> Back to Products
+            </button>
+
+            <div class="product-detail-content">
+                <div class="detail-image-box">
+                    <img id="detailImg" src="" alt="Product Image">
+                </div>
+                <div class="detail-info-box">
+                    <span class="section-badge" id="detailCategory">Category</span>
+                    <h2 id="detailTitle" style="margin-top: 10px;">Product Title</h2>
+                    <h4 id="detailSubtitle" class="detail-subtitle">Product Subtitle</h4>
+                    <p id="detailDescription" class="detail-description">Product Description...</p>
+                    
+                    <div class="detail-specifications">
+                        <h3>Key Specifications & Features</h3>
+                        <ul id="detailFeatures"></ul>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary" style="margin-top: 25px; display: inline-block;">
+                        Inquire About This Product <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- Suppliers Section -->
+<section class="suppliers-section section-padding" id="suppliers">
+    <div class="container text-center">
+        <!-- Logo & Header -->
+        <div class="company-brand" data-aos="fade-down">
+            <div class="brand-logo-title">
+                <img src="image/logo.png" alt="Aung Paing Tun Logo" class="apt-header-logo" onerror="this.style.display='none'">
+                <h2>Aung Paing Tun Co., Ltd.</h2>
+            </div>
+            <span class="suppliers-badge">Our Suppliers</span>
+        </div>
+
+        <!-- Supplier Logos Grid (8 Logos) -->
+        <div class="suppliers-grid">
+            <!-- Row 1: Left to Right / Right to Left Animations -->
+            <div class="supplier-card" data-aos="fade-right" data-aos-delay="100">
+                <img src="image/zp.png" alt="Zeiss Pharma" onerror="this.src='https://via.placeholder.com/150x60?text=Zeiss+Pharma'">
+            </div>
+            <div class="supplier-card" data-aos="fade-down" data-aos-delay="200">
+                <img src="image/nutrilo.png" alt="Nutrilo" onerror="this.src='https://via.placeholder.com/150x60?text=Nutrilo'">
+            </div>
+            <div class="supplier-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="image/pl.jpg" alt="PL" onerror="this.src='https://via.placeholder.com/150x60?text=PL'">
+            </div>
+            <div class="supplier-card" data-aos="fade-left" data-aos-delay="400">
+                <img src="image/medo.png" alt="Medochemie" onerror="this.src='https://via.placeholder.com/150x60?text=Medochemie'">
+            </div>
+
+            <!-- Row 2 -->
+            <div class="supplier-card" data-aos="fade-right" data-aos-delay="200">
+                <img src="image/asoj.jpg" alt="ASOJ Soft Caps" onerror="this.src='https://via.placeholder.com/150x60?text=ASOJ'">
+            </div>
+            <div class="supplier-card" data-aos="fade-left" data-aos-delay="300">
+                <img src="image/inno.png" alt="Innova Captab" onerror="this.src='https://via.placeholder.com/150x60?text=Innova'">
+            </div>
+
+            <!-- Row 3 -->
+            <div class="supplier-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="image/samrudh.jpg" alt="Samrudh" onerror="this.src='https://via.placeholder.com/150x60?text=Samrudh'">
+            </div>
+            <div class="supplier-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="image/scitech.png" alt="SciTech" onerror="this.src='https://via.placeholder.com/150x60?text=SciTech'">
+            </div>
+        </div>
+
+        <!-- Country Flags & Badges Row -->
+        <div class="flags-row">
+            <img src="image/poland.png" alt="Poland Flag" class="flag-icon" data-aos="fade-right" data-aos-delay="100" onerror="this.src='https://flagcdn.com/w80/pl.png'">
+            <img src="image/germany.png" alt="Germany Flag" class="flag-icon" data-aos="fade-up" data-aos-delay="200" onerror="this.src='https://flagcdn.com/w80/de.png'">
+            <img src="image/gmp.png" alt="EU GMP Badge" class="gmp-badge" data-aos="zoom-in" data-aos-delay="300" onerror="this.src='https://via.placeholder.com/80?text=GMP'">
+            <img src="image/cyprus.svg" alt="Cyprus Flag" class="flag-icon" data-aos="fade-down" data-aos-delay="400" onerror="this.src='https://flagcdn.com/w80/cy.png'">
+            <img src="image/india.png" alt="India Flag" class="flag-icon" data-aos="fade-left" data-aos-delay="500" onerror="this.src='https://flagcdn.com/w80/in.png'">
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section" id="contact">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <div class="cta-box">
+                    <p class="cta-title">Interested in our products or services?</p>
+                    <a href="mailto:info@aungpaingtun.com" class="cta-btn">Contact Us Today</a>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-col">
+                        <h3>Visit Us</h3>
+                        <p>No. 32, MaNawHari Street, Yangon, Myanmar.</p>
+                    </div>
+                    <div class="info-col">
+                        <h3>Call Us</h3>
+                        <p><a href="tel:+959981400500">+95 9 981400500</a></p>
+                        <p><a href="tel:+959406400500">+95 9 406400500</a></p>
+                    </div>
+                    <div class="info-col">
+                        <h3>Working Hours</h3>
+                        <p>Mon - Fri: 9:00 AM - 3:30 PM</p>
+                        <p><a href="mailto:info@aungpaingtun.com">info@aungpaingtun.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2740.4546621622558!2d96.13331277330101!3d16.79028831973534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb6c13ebc72f%3A0x20c1cec98d44e81d!2sKTZ%20Company%20Limited!5e1!3m2!1sen!2sth!4v1790581277086!5m2!1sen!2sth" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Aung Paing Tun Company Limited. All rights reserved.Web Design By ThuRein</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS Animation JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom App Scripts -->
+    <script src="js/product.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
