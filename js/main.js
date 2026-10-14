@@ -273,3 +273,37 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProducts('Pharmaceutical');
     }
 });
+
+wrapper.innerHTML = filtered.map((item, index) => `
+    <div class="swiper-slide">
+        <!-- data-aos="fade-left" ထည့်သွင်းထားပြီး Delay အနည်းငယ်စီ ခြားထားပါသည် -->
+        <div class="product-card-slide" 
+             data-id="${item.id}" 
+             data-aos="fade-left" 
+             data-aos-delay="${(index + 1) * 100}" 
+             data-aos-duration="800">
+            
+            <div class="slide-img-box">
+                <img src="${item.img}" alt="${item.title}" onerror="this.src='https://via.placeholder.com/200x150?text=No+Image'">
+            </div>
+            <h4 class="slide-title">${item.title}</h4>
+            <p class="slide-subtitle">${item.subtitle}</p>
+            <span class="view-detail-btn">View Detail <i class="fas fa-arrow-right"></i></span>
+        </div>
+    </div>
+`).join('');
+
+// Product များကို Render လုပ်ပြီးတိုင်း AOS ကို ပြန်ပြီး Refresh လုပ်ပေးရန် လိုအပ်ပါသည်
+if (typeof AOS !== 'undefined') {
+    AOS.refresh();
+}
+document.addEventListener('DOMContentLoaded', () => {
+    // AOS Initialize
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,  // Animation ကြာချိန် (0.8s)[cite: 3, 4]
+            once: false,     // Scroll ဆွဲတိုင်း ဘယ်ညာမှ ပြန်ဝင်လာမည်[cite: 3, 4]
+            offset: 100
+        });
+    }
+});
