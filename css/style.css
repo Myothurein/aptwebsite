@@ -433,9 +433,6 @@ img {
 /* =========================================
    PRODUCTS SECTION
 ========================================= */
-/* =========================================
-   PRODUCT DETAIL VIEW & BREADCRUMB
-========================================= */
 .product-card-slide {
     cursor: pointer;
     position: relative;
@@ -940,4 +937,46 @@ img {
     .stats-grid {
         grid-template-columns: 1fr !important;
     }
+}
+
+/* =========================================
+   SWIPER PAGINATION POSITION FIX
+========================================= */
+
+/* 1. Product Section နဲ့ Swiper Container ကို Relative ပေးထားခြင်း */
+.products-section {
+    position: relative;
+}
+
+.product-swiper {
+    position: relative !important;
+    /* အစက်လေးများ အောက်ခြေမှာ နေရာရအောင် အောက်ဘက် Padding ပေးပါ */
+    padding-bottom: 55px !important; 
+    overflow: hidden;
+}
+
+/* 2. Pagination Dots ကို Product Swiper အတွင်း အောက်ခြေသို့ သီးသန့် ပို့ပေးခြင်း */
+.product-swiper .swiper-pagination {
+    position: absolute !important;
+    bottom: 10px !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 10 !important;
+    text-align: center;
+}
+
+/* 3. Dots လေးများ၏ ဒီဇိုင်း (လိုအပ်ပါက) */
+.product-swiper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #c4943d; /* သင့် Theme အဝါရောင်/ရွှေရောင် */
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+
+.product-swiper .swiper-pagination-bullet-active {
+    width: 25px; /* Active ဖြစ်နေစဉ် အလျားရှည်သွားမည် */
+    border-radius: 5px;
+    background: #c4943d;
+    opacity: 1;
 }
